@@ -1,11 +1,16 @@
+import { AboutComponent } from './components/about/about.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'tasks',
+    component: TasksComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
   },
 ];
 
